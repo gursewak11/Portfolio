@@ -131,8 +131,23 @@ img {
     }
 
     // Header Inner
-    // &-inner {
-    // }
+    &-inner {
+        position: relative;
+        background: #000000;
+        height: 5.5rem;
+        color: #ffffff;
+        border-bottom: 3px solid $main-color;
+        &::before {
+            content: "";
+            position: absolute;
+            background: $bg-image no-repeat center 50% / cover;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0.3;
+        }
+    }
 }
 
 // Home Sections

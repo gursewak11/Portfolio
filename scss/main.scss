@@ -181,4 +181,53 @@ img {
             }
         }
     }
+
+    // Home Section C
+    &-c {
+        .process {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1.5rem;
+            text-align: center;
+
+            &-step {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 28px;
+                background: #ffbc00;
+                color: #fff;
+                border-radius: 50%;
+                height: 47px;
+                width: 47px;
+                line-height: 15px;
+                padding: 1rem;
+                transition: all 1s;
+            }
+
+            &-icon {
+                border-radius: 50%;
+                background: $dark-color;
+                color: #ffffff;
+                padding: 2rem;
+                width: 136px;
+                height: 136px;
+                line-height: 70px;
+                text-align: center;
+                position: relative;
+                transition: all 1s;
+
+                &:hover {
+                    background: $main-color;
+                    width: 150px;
+                    height: 150px;
+                    line-height: 90px;
+
+                    .process-step {
+                        background: $dark-color;
+                    }
+                }
+            }
+        }
+    }
 }

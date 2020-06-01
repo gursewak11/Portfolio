@@ -295,6 +295,19 @@ img {
   color: #ffbc00;
   margin: 1rem; }
 
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  width: 100%;
+  background: #f4f4f4;
+  border-radius: 5px;
+  margin-bottom: 0.6rem; }
+  #about-b .progress div {
+    height: 100%;
+    color: #ffffff;
+    text-align: center;
+    background: #ffbc00; }
+
 #main-footer {
   background: #333333;
   color: #ffffff;

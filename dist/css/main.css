@@ -101,7 +101,8 @@ img {
         #main-nav ul li a:hover {
           border-color: #cccccc; }
         #main-nav ul li a.current {
-          border-color: #ffbc00; }
+          border-color: #ffbc00;
+          cursor: context-menu; }
 
 #header-home {
   position: relative;

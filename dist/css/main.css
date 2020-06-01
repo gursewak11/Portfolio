@@ -1,3 +1,42 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1; }
+
+.btn-main {
+  color: #333333;
+  background: #ffbc00; }
+
+.btn-light {
+  color: #333333;
+  background: #f4f4f4; }
+
+.btn-dark {
+  color: #f4f4f4;
+  background: #333333; }
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: #ffbc00; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -22,3 +61,71 @@ h4 {
 
 img {
   width: 100%; }
+
+#logo {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: context-menu; }
+  #logo span {
+    display: inline-block;
+    font-weight: lighter;
+    width: 0;
+    opacity: 0;
+    transition: all 0.8s ease-in-out; }
+  #logo:hover span.g {
+    opacity: 1;
+    width: 129.05px; }
+  #logo:hover span.s {
+    opacity: 1;
+    width: 65.28px; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  z-index: 1; }
+  #main-nav ul {
+    display: flex;
+    z-index: 1; }
+    #main-nav ul li {
+      padding: 1rem 1.5rem; }
+      #main-nav ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s; }
+        #main-nav ul li a:hover {
+          border-color: #cccccc; }
+        #main-nav ul li a.current {
+          border-color: #ffbc00; }
+
+#header-home {
+  position: relative;
+  background: #000000;
+  height: 100vh;
+  color: #ffffff; }
+  #header-home::before {
+    content: "";
+    position: absolute;
+    background: url("../img/showcase.jpg") no-repeat center right/cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3; }
+  #header-home .header-content {
+    z-index: 1;
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    #header-home .header-content h1 {
+      z-index: 1;
+      font-size: 4rem;
+      line-height: 1.2; }

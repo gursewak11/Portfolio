@@ -45,7 +45,6 @@
     }
 
     #about {
-        // About A
         &-a {
             .about-info {
                 grid-template-areas:
@@ -63,13 +62,59 @@
         &-c {
             display: none;
         }
-
         &-d {
             .testimonials {
                 grid-template-columns: 1fr;
                 > div {
                     margin-bottom: 1rem;
                 }
+            }
+        }
+    }
+
+    .items {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        box-shadow: none;
+        .item {
+            box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3), -5px -5px 10px 0 rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    #contact {
+        &-a {
+            .text-fields {
+                grid-template-areas:
+                    "name"
+                    "email"
+                    "subject"
+                    "phone"
+                    "message";
+            }
+        }
+
+        &-b {
+            .contact-info {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 1.5rem;
+                text-align: center;
+
+                > div {
+                    border-bottom: 1px solid #555555;
+                    padding-bottom: 1.5rem;
+                }
+                > div:last-child {
+                    border-bottom: none;
+                    padding-bottom: 1.5rem;
+                }
+            }
+        }
+
+        &-c {
+            h1 {
+                text-align: center;
+                font-size: 4rem;
             }
         }
     }

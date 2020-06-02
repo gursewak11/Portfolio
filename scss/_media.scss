@@ -55,15 +55,11 @@
                     "aw2"
                     "aw3";
             }
-
             .bio {
-                grid-area: bio;
                 border-left: none;
                 border-top: 3px solid $main-color;
-                padding: 0.8rem;
             }
         }
-
         &-c {
             display: none;
         }
@@ -71,7 +67,6 @@
         &-d {
             .testimonials {
                 grid-template-columns: 1fr;
-
                 > div {
                     margin-bottom: 1rem;
                 }

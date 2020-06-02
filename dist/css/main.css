@@ -758,12 +758,8 @@ img {
         grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3";
   }
   #about-a .bio {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: bio;
     border-left: none;
     border-top: 3px solid #ffbc00;
-    padding: 0.8rem;
   }
   #about-c {
     display: none;

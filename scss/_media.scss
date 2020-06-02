@@ -1,0 +1,95 @@
+// Tablet & Smaller
+
+@media (max-width: 500px) {
+    #main-nav {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            padding: 1rem;
+        }
+    }
+
+    #header {
+        &-home {
+            .header-content {
+                text-align: start;
+                h1 {
+                    display: inline-block;
+                    height: 304px;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        &-inner {
+            height: 10rem;
+            &::before {
+                background: $bg-image no-repeat center 45% / cover;
+            }
+        }
+    }
+
+    #home {
+        &-a .specials {
+            grid-template-columns: 1fr;
+        }
+
+        &-b .stats {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &-c .process {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    #about {
+        // About A
+        &-a {
+            .about-info {
+                grid-template-areas:
+                    "bioimage"
+                    "bio"
+                    "aw1"
+                    "aw2"
+                    "aw3";
+            }
+
+            .bio {
+                grid-area: bio;
+                border-left: none;
+                border-top: 3px solid $main-color;
+                padding: 0.8rem;
+            }
+        }
+
+        &-c {
+            display: none;
+        }
+
+        &-d {
+            .testimonials {
+                grid-template-columns: 1fr;
+
+                > div {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    #main-footer {
+        height: 6.5rem;
+
+        .footer-content {
+            padding-top: 1rem;
+            flex-direction: column;
+            height: 100%;
+
+            .social .fab {
+                margin: 0.8rem 0;
+            }
+        }
+    }
+}

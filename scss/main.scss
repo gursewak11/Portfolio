@@ -127,6 +127,10 @@ img {
                 z-index: 1;
                 font-size: 4rem;
                 line-height: 1.2;
+
+                span .show {
+                    display: none;
+                }
             }
         }
     }
@@ -452,3 +456,6 @@ img {
         }
     }
 }
+
+// Import media query
+@import "media";
